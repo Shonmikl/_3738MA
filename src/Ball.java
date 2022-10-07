@@ -4,4 +4,7 @@ public class Ball {
     public Ball(String colour) {
         this.colour = colour;
     }
+
+    public Ball() {
+    }
 }

@@ -1,4 +1,4 @@
-public class Person {
+public class Person1 {
     String name;
     int age;
     Ball ball;
@@ -7,9 +7,21 @@ public class Person {
      *     Person     person                 =      new            Person();
      */
 
-    public Person(String name, int age, Ball ball) {
+    public Person1(String name, int age, Ball ball) {
         this.name = name;
         this.age = age;
         this.ball = ball;
+    }
+
+    public Person1(int age, Ball ball) {
+        this.age = age;
+        this.ball = ball;
+    }
+
+    public Person1() {
+    }
+
+    void getSmth() {
+        System.out.println("!!!!!");
     }
 }
