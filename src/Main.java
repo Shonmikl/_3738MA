@@ -1,10 +1,22 @@
 import _07102022.hero.Elf4;
 
 public class Main {
+    public static void getIterate(int floorNumber) {
+        int count = 0;
+        int floor = 0;
+
+        for (int i = floor; i < floorNumber;) {
+            floor = floor + 4;
+            count++;
+        }
+
+        if(floorNumber %4 !=0) {
+            count++;
+        }
+
+        System.out.println(count);
+    }
     public static void main(String[] args) {
-        Elf4 elf4 = new Elf4(1, "Mik");
-        System.out.println(elf4.getId());
-        System.out.println(elf4.getNickName());
-        System.out.println(elf4);
+       getIterate(163);
     }
 }
